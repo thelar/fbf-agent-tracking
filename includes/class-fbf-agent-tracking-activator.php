@@ -44,7 +44,10 @@ class Fbf_Agent_Tracking_Activator {
           id mediumint(9) NOT NULL AUTO_INCREMENT,
           timestamp datetime DEFAULT CURRENT_TIMESTAMP,
           sales_id int(10),
+          sales_login varchar(50),
           customer_id int(10),
+          customer_login varchar(50),
+          order_id int(10),
           action varchar(20) NOT NULL,
           PRIMARY KEY  (id)
         ) $charset_collate;";

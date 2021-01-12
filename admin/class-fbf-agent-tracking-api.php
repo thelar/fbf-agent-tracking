@@ -50,8 +50,11 @@ XML;
                 $row = $output->addChild('row');
                 $row->addChild('datetime', $result->timestamp);
                 $row->addChild('sales_id', $result->sales_id);
+                $row->addChild('sales_login', $result->sales_login);
                 $row->addChild('customer_id', $result->customer_id);
+                $row->addChild('customer_login', $result->customer_login);
                 $row->addChild('action', $result->action);
+                $row->addChild('order_id', $result->order_id);
             }
         }
         header('Content-Type: application/xml');
