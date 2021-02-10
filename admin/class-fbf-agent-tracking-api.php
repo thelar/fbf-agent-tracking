@@ -36,7 +36,7 @@ class Fbf_Agent_Tracking_Api
         global $wpdb;
         $table_name = $wpdb->prefix . 'fbf_agent_tracking';
         //$query = 'SELECT * FROM ' . $table_name . ' WHERE timestamp >= curdate() - INTERVAL DAYOFWEEK(curdate())+6 DAY AND timestamp < curdate() - INTERVAL DAYOFWEEK(curdate())-1 DAY';
-        $query = 'SELECT * FROM ' . $table_name . ' WHERE timestamp >= curdate() - INTERVAL DAYOFWEEK(curdate())+7 DAY';
+        $query = 'SELECT * FROM ' . $table_name . ' WHERE timestamp >= curdate() - INTERVAL DAYOFWEEK(curdate())+60 DAY';
         //var_dump($query);
         $xml = <<<XML
 <?xml version='1.0' standalone='yes'?>
