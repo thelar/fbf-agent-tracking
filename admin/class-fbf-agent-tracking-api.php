@@ -1,6 +1,6 @@
 <?php
 
-
+#[\AllowDynamicProperties]
 class Fbf_Agent_Tracking_Api
 {
 
